@@ -10,7 +10,7 @@ import axios from 'axios';
 function App() {
   const [pizzas, setPizzas] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:3001/db.json").then((
+    axios.get("/BANSHEE-PIZZA/db.json").then((
       { data }) => {
       setPizzas(data.pizzas) 
       }
